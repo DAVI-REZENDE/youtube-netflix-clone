@@ -3,27 +3,27 @@
     {
       "id": "1",
       "name": "Jonh",
-      "image": "../../assets/jonh.png"
+      "image": "https://raw.githubusercontent.com/DAVI-REZENDE/youtube-netflix-clone/main/src/assets/jonh.png"
     },
     {
       "id": "2",
       "name": "Jennifer",
-      "image": "../../assets/jennifer.png"
+      "image": "https://github.com/DAVI-REZENDE/youtube-netflix-clone/blob/main/src/assets/jennifer.png"
     },
     {
       "id": "3",
       "name": "George",
-      "image": "../../assets/george.png"
+      "image": "https://github.com/DAVI-REZENDE/youtube-netflix-clone/blob/main/src/assets/george.png"
     },
     {
       "id": "4",
       "name": "Alex",
-      "image": "../../assets/alex.png"
+      "image": "https://github.com/DAVI-REZENDE/youtube-netflix-clone/blob/main/src/assets/alex.png"
     },
     {
       "id": "5",
       "name": "Smith",
-      "image": "../../assets/smith.png"
+      "image": ".https://github.com/DAVI-REZENDE/youtube-netflix-clone/blob/main/src/assets/smith.png"
     }
   ]
 }
