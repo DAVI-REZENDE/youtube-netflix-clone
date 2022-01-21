@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Image } from 'react-native';
+import { Image, Dimensions } from 'react-native';
 
 import { 
   Container,
@@ -10,21 +10,13 @@ import {
   Title,
   Users,
   User,
+  ImageProfile,
   UserName
 } from './styles';
 
+import {users} from '../../data/users'
 
-export function Profiles({}) {
-
-  const [users, setUsers] = useState([])
-
-  useEffect(async () => {
-    const response = await fetch('http://localhost:3000/users')
-      .then(res => res.json())
-
-    setUsers(response)
-  }, [])
-
+export function Profiles({ navigation }) {
   return (
     <Container>
       <Header>
@@ -40,12 +32,13 @@ export function Profiles({}) {
 
         <Users>
           {users.map((user) => {
-            const image = user.image
-            // const imageCurrent = require(image)
-
             return (
-              <User key={user.id}>
-                <Image source={{uri: image}} style={{width: 200, height: 200}} />
+              <User 
+                key={user.id} 
+                activeOpacity={0.7}
+                onPress={() => navigation.navigate('Home', {image: user.image})}
+              >
+                <ImageProfile source={{uri: user.image}} />
                 <UserName>{user.name}</UserName>
               </User>
             )

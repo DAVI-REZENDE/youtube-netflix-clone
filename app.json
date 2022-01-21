@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "netflix-clone",
+    "name": "Netflix Clone",
     "slug": "netflix-clone",
     "version": "1.0.0",
     "assetBundlePatterns": [
@@ -10,7 +10,18 @@
       "image": "./assets/splash.png",
       "resizeMode": "cover",
       "backgroundColor": "#000"
+    },
+    "android": {
+      "package": "com.davirezende.netflixclone"
     }
   },
-  "name": "netflix-clone"
+  "android": {
+    "package": "com.davirezende.netflixclone",
+    "versionCode": 1
+  },
+  "ios": {
+    "bundleIdentifier": "com.davirezende.netflixclone",
+    "buildNumber": "1.0.0"
+  },
+  "name": "Netflix Clone"
 }
